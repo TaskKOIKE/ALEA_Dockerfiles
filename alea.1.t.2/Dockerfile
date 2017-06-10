@@ -110,8 +110,7 @@ RUN wget -q https://github.com/BenLangmead/bowtie2/releases/download/v2.2.9/bowt
 # bedGraphToBigWig
 ##########################################################################################
 
-ENV BEDGRAPHTOBIGWIG_VERSION=287
-ENV BEDGRAPHTOBIGWIG_URL=http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64.v${BEDGRAPHTOBIGWIG_VERSION}/bedGraphToBigWig
+ENV BEDGRAPHTOBIGWIG_URL=http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/bedGraphToBigWig
 
 WORKDIR /tmp
 RUN wget -q ${BEDGRAPHTOBIGWIG_URL} && \
